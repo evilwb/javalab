@@ -13,6 +13,6 @@ public class Demo1 {
     public static void main(String[] args)
     {
         Demo1 obj = new Demo1();
-        System.out.println(Demo1.input.nextLine());
+        System.out.println(obj.input.nextLine());
     }
 }
