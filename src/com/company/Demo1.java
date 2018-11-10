@@ -4,9 +4,9 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Demo1 {
-    protected Scanner input=null;
+    private Scanner input=null;
 
-    Demo1(){
+    private Demo1(){
         input = new Scanner(System.in);
     }
 
