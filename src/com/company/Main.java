@@ -8,5 +8,6 @@ public class Main {
 
         students.Build_List();
         students.Display_List();
+        System.out.print(students.count() + "entries in the list");
     }
 }
