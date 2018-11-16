@@ -1,21 +1,24 @@
 package com.company;
 
-import java.io.*;
 import java.util.Scanner;
 
-public class Demo1
+public class Person
 {
-    private Scanner input;
-    private int age;
-    private float wage;
-    private String name;
+    protected String name;
+    protected int age;
+    protected float wage;
+    protected Scanner input;
 
-    private Demo1()
+
+    public Person()
     {
-        input = new Scanner(System.in);
+        this.name = null;
+        this.age = 0;
+        this.wage = 0;
+        this.input = new Scanner(System.in);
     }
 
-    private void read()
+    public void input()
     {
         System.out.print("Enter a name: ");
         this.name = this.input.nextLine();
@@ -27,15 +30,14 @@ public class Demo1
         this.input.nextLine();
     }
 
-    private void display()
+    public void display()
     {
         System.out.println("Name: " + name + "\nAge: " + age + "\nWage: $" + wage + "/hour");
     }
 
-    public static void main(String[] args)
+    public boolean equals(String name)
     {
-        Demo1 obj = new Demo1();
-        obj.read();
-        obj.display();
+        return this.name.equalsIgnoreCase(name);
     }
+
 }
